@@ -1,7 +1,7 @@
 {
   "name": "constrain-number",
   "version": "1.0.0",
-  "description": "constrain a number",
+  "description": "constrain a number to be within a range",
   "main": "build/index.js",
   "scripts": {
     "test": "jest",
