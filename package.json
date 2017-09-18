@@ -1,7 +1,7 @@
 {
-  "name": "number-limits",
+  "name": "constrain-number",
   "version": "1.0.0",
-  "description": "limit a number",
+  "description": "constrain a number",
   "main": "build/index.js",
   "scripts": {
     "test": "jest",
@@ -15,7 +15,8 @@
   "keywords": [
     "number",
     "math",
-    "limit"
+    "limit",
+    "constrain"
   ],
   "author": "rogerbf <roger@bergfa.lk> (http://bergfa.lk/)",
   "license": "MIT",
