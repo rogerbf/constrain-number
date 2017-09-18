@@ -1,9 +1,9 @@
-export const lowerLimit = limit => value => value >= limit ? value : limit
+export const min = limit => value => value >= limit ? value : limit
 
-export const upperLimit = limit => value => value <= limit ? value : limit
+export const max = limit => value => value <= limit ? value : limit
 
-export const limit = ({ min, max }) => value => {
-  const lower = lowerLimit(min)
-  const upper = upperLimit(max)
-  return upper(lower(value))
+export const constrain = ({ min: lower, max: upper }) => value => {
+  const lowerFn = min(lower)
+  const upperFn = max(upper)
+  return upperFn(lowerFn(value))
 }
