@@ -1,0 +1,47 @@
+{
+  "name": "number-limits",
+  "version": "1.0.0",
+  "description": "limit a number",
+  "main": "build/index.js",
+  "scripts": {
+    "test": "jest",
+    "watch:test": "jest --watch",
+    "coverage": "jest --coverage",
+    "build": "rimraf build && babel source --out-dir build",
+    "prepublish": "npm run format && npm run lint && npm run test && nsp check && npm run build",
+    "lint": "eslint source",
+    "format": "prettier-standard \"source/**/*.js\""
+  },
+  "keywords": [
+    "number",
+    "math",
+    "limit"
+  ],
+  "author": "rogerbf <roger@bergfa.lk> (http://bergfa.lk/)",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "6.26.0",
+    "babel-eslint": "8.0.0",
+    "babel-plugin-add-module-exports": "0.2.1",
+    "babel-plugin-dynamic-import-node": "1.1.0",
+    "babel-preset-env": "1.6.0",
+    "babel-preset-stage-3": "6.24.1",
+    "eslint-config-standard": "10.2.1",
+    "eslint-plugin-import": "2.7.0",
+    "eslint-plugin-node": "5.1.1",
+    "eslint-plugin-promise": "3.5.0",
+    "eslint-plugin-standard": "3.0.1",
+    "jest": "21.1.0",
+    "nsp": "2.8.0",
+    "prettier-standard": "6.0.0",
+    "rimraf": "2.6.2"
+  },
+  "module": "source/index.js",
+  "files": [
+    "LICENSE",
+    "README.md",
+    "source",
+    "build"
+  ],
+  "dependencies": {}
+}
